@@ -121,10 +121,9 @@
        2   4
     ```
 
-**Sonuç Olarak Oluşan Binary Search Tree**
+> Sonuç Olarak Oluşan Binary Search Tree
 
-
-
+```
            7
           / \
          5   8
@@ -134,10 +133,11 @@
      0   3   
         / \
        2   4
+```
 
-    # Açıklama
+# Açıklama
 
-    - Kök düğüm 7 olarak seçildi.
+- Kök düğüm 7 olarak seçildi.
     - Her ekleme işleminde, eklenecek eleman mevcut düğümle karşılaştırılarak daha küçükse sol alt ağaca, daha büyükse sağ alt ağaca yerleştirildi.
     - Bu işlem her düğüm için tekrar edilerek BST oluşturuldu.
     - Bu adımlarla verilen diziden oluşturulan Binary Search Tree (BST) yukarıdaki gibi olacaktır.
