@@ -1,144 +1,129 @@
-    # MERGE Sort
+# MERGE Sort
 
-    ### Proje 3
+### Proje 3
 
-    > Q: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+> Q: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
 
+**Binary Search Tree Oluşturma Adımları**
 
-    **Binary Search Tree Oluşturma Adımları**
+1. Kök düğüm seçimi:
+   - İlk eleman kök düğüm olarak seçilir: 7
 
-    1. Kök düğüm seçimi:
+2. Diğer elemanları ekleme:
+   - Her bir elemanı kökle karşılaştırarak, küçükse sol alt ağaca, büyükse sağ alt ağaca yerleştiririz.
 
-    - İlk eleman kök düğüm olarak seçilir: 7
+**Adım Adım Ekleme Süreci**
 
-    2. Diğer elemanları ekleme:
-
-    - Her bir elemanı kökle karşılaştırarak, küçükse sol alt ağaca, büyükse sağ alt ağaca yerleştiririz.
-
-    **Adım Adım Ekleme Süreci**
-
-    1. 7 Kök Düğüm
-    
+1. 7 Kök Düğüm
     ```
-        7
+    7
     ```
 
-    2. 5'i ekle
-
+2. 5'i ekle
     ```
-        7
-    /
-    5
-    ```
-
-    3. 1'i ekle
-
-    ```
-        7
-    /
-    5
-    /
-    1
+       7
+      /
+     5
     ```
 
-    4. 8'i ekle
-
+3. 1'i ekle
     ```
-        7
+       7
+      / \
+     5   1
+    ```
+
+4. 8'i ekle
+    ```
+       7
+      / \
+     5   8
+      \
+       1
+    ```
+
+5. 3'ü ekle
+    ```
+       7
+      / \
+     5   8
     / \
-    5   8
-    /
-    1
+   1   3
     ```
 
-    5. 3'ü ekle
-
+6. 6'yı ekle
     ```
-        7
+       7
+      / \
+     5   8
     / \
-    5   8
-    /
-    1
-    \
-    3
+   1   6
+      /
+     3
     ```
 
-    6. 6'yı ekle
-
+7. 0'ı ekle
     ```
-        7
+       7
+      / \
+     5   8
     / \
-    5   8
-    / \
-    1   6
-    \
-    3
-    ```
-
-    7. 0'ı ekle
-
-    ```
-        7
-    / \
-    5   8
-    / \
-    1   6
-    / \
-    0  3
+   1   6
+  / \
+ 0   3
     ```
 
-    8. 9'u ekle
-
+8. 9'u ekle
     ```
-        7
-    / \
-    5   8
+       7
+      / \
+     5   8
     / \   \
-    1   6   9
-    / \
-    0  3
+   1   6   9
+  / \
+ 0   3
     ```
 
-    9. 4'ü ekle
-
+9. 4'ü ekle
     ```
-        7
-    / \
-    5   8
+       7
+      / \
+     5   8
     / \   \
-    1   6   9
-    / \
-    0  3
-        \
-        4
+   1   6   9
+  / \   
+ 0   3   
+      \
+       4
     ```
 
-    10. 2'yi ekle
-    
+10. 2'yi ekle
     ```
-        7
-    / \
-    5   8
+       7
+      / \
+     5   8
     / \   \
-    1   6   9
+   1   6   9
+  / \   \
+ 0   3   
     / \
-    0  3
-    / \
-    2   4
+   2   4
     ```
 
-    **Sonuç Olarak Oluşan Binary Search Tree**
+**Sonuç Olarak Oluşan Binary Search Tree**
+
+
 
     ```
-            7
-        / \
-        5   8
-        / \   \
-        1   6   9
+       7
+      / \
+     5   8
+    / \   \
+   1   6   9
+  / \   \
+ 0   3   
     / \
-    0   3
-        / \
-        2   4
+   2   4
     ```
 
     # Açıklama
